@@ -1,0 +1,1 @@
+crawl - ts-node src/index.ts crawl https://toidicodedao.com/tag/viet-blog/ --style article --category news

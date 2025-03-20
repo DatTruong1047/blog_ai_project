@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "target": "ES2019",
     "sourceMap": true,
     "outDir": "dist/src",
@@ -16,7 +17,8 @@
     "paths": {
       "@app": ["src"],
       "@app/*": ["src/*"],
-      "@test/*": ["test/*"]
+      "@test/*": ["test/*"],
+      "@config": ["src/config/index.ts"]
     }
   }
 }
