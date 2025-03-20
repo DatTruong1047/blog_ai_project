@@ -1,7 +1,7 @@
 {
-  "name": "config-ts",
+  "name": "blog_ai_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog AI ",
   "private": true,
   "scripts": {
     "prettier:check": "prettier --check ./**/*.{ts,js,json,*rc}",
@@ -10,7 +10,9 @@
     "prepare": "husky install",
     "precommit": "lint-staged",
     "prepush": "",
-    "prebuild": "rimraf dist"
+    "prebuild": "rimraf dist",
+    "start": "npx nodemon",
+    "run:script": "npx ts-node src/commands/new.ts"
   },
   "repository": {
     "type": "git",
@@ -19,11 +21,23 @@
   "author": "",
   "license": "",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "prisma": "^6.4.1",
+    "zod": "^3.24.2"
+  },
   "devDependencies": {
     "@babel/plugin-proposal-private-methods": "^7.18.6",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^16.2.4",
+    "@types/node": "^22.13.10",
+    "@types/yargs": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "commitizen": "^4.2.5",
@@ -34,10 +48,14 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.5.0",
+    "nodemon": "^3.1.9",
     "prettier": "^2.7.1",
     "ts-loader": "^9.3.1",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.2.3"
+    "typescript": "^5.8.2"
+  },
+  "bin": {
+    "bloggen_v2": "npx ts-node src/commands/index.ts"
   }
 }
