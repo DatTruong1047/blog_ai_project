@@ -1,7 +1,7 @@
 {
-  "name": "config-ts",
+  "name": "blog_ai_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog AI ",
   "private": true,
   "scripts": {
     "prettier:check": "prettier --check ./**/*.{ts,js,json,*rc}",
@@ -22,22 +22,15 @@
   "license": "",
   "keywords": [],
   "dependencies": {
-    "@google/generative-ai": "^0.24.0",
     "@prisma/client": "^6.4.1",
     "@types/body-parser": "^1.19.5",
     "@types/express": "^5.0.0",
-    "@types/node-cron": "^3.0.11",
     "body-parser": "^1.20.3",
-    "chalk": "^5.4.1",
-    "cron": "^4.1.0",
-    "csv-parser": "^3.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
-    "node-cron": "^3.0.3",
     "prisma": "^6.4.1",
-    "puppeteer": "^24.4.0",
-    "yargs": "^17.7.2"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-methods": "^7.18.6",

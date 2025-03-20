@@ -6,9 +6,9 @@ import express, { Express } from 'express';
 dotenv.config();
 
 const app: Express = express();
-const prisma = new PrismaClient();
+export const prisma = new PrismaClient();
 
 app.use(express.json());
 app.use(bodyParser.json());
 
-export { app, prisma };
+export { app };

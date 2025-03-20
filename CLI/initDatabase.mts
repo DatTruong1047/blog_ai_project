@@ -4,7 +4,6 @@ import { PrismaClient } from '@prisma/client';
 import chalk from 'chalk';
 const prisma = new PrismaClient();
 
-
 async function runPrismaCommand(command) {
   return new Promise((resolve, rejects) => {
     exec(command, (error, stdout) => {
