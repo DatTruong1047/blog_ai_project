@@ -1,0 +1,1 @@
+list - ts-node src/index.ts list --skip 1 --take 2 --style funny
