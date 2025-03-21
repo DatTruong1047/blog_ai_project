@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // Hoặc phiên bản ES phù hợp
+    "module": "CommonJS", // Hoặc "esnext" tùy thuộc vào module của bạn
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true, // Cho phép import CommonJS module vào ES module
+    "strict": true,
+    "skipLibCheck": true, // Bỏ qua kiểm tra kiểu cho các thư viện bên thứ ba
+    "moduleResolution": "node", // Bắt buộc để nhận diện module từ node_modules
+    "resolveJsonModule": true, // Cho phép import JSON module
+    "types": ["node", "yargs"], // Include type definitions for node, yargs
+    "paths": {
+      "@app": ["../src"],
+      "@module_cli": ["src/modules"]
+    }
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/**/*.test.ts"]
+}
